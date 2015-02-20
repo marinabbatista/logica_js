@@ -17,10 +17,24 @@
 			document.write("Seu IMC é: " + imc + "<br>");
 			document.write("Cuidado, seu estatus é: Magreza.");
 		}
-		else {
+		else if (imc > 18 && im <=25) {
 			document.write("Seu IMC é: " + imc + "<br>");
-			document.write("Pelo menos Magreza você não Tem !!");
+			document.write("Cuidado, seu estatus é: Normal.");
 		}
+			else if (imc > 25 && im <=30) {
+			document.write("Seu IMC é: " + imc + "<br>");
+			document.write("Cuidado, seu estatus é: Sobrepeso.");
+		}	else if (imc > 30 && im <=35) {
+			document.write("Seu IMC é: " + imc + "<br>");
+			document.write("Cuidado, seu estatus é: Obesidade grau I.");
+		}	else if (imc > 35 && im <=40) {
+			document.write("Seu IMC é: " + imc + "<br>");
+			document.write("Cuidado, seu estatus é: Obesidade grau II.");
+		}	else {
+			document.write("Seu IMC é: " + imc + "<br>");
+			document.write("Cuidado, seu estatus é: Obesidade Mórbida.");
+		}
+
 		
 	}
 	//chama a função para a realização do cálculo.
