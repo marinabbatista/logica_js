@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<headd>
+	<title>Estrutura de contole</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Entendendo o IF</h1>
+	<script type="text/javascript">
+	function calculaIMC() {
+		/*A função prompt captura a entrada de dados do teclado do usuário*/
+		//A função parseINT converte um string para inteiro.
+		var peso = parseInt(prompt("Informe seu peso"));
+		var altura = parseFloat(prompt("Informe sua altura"));
+		var imc = peso / (altura * altura);
+		if (imc < 18) {
+			document.write("Seu IMC é: " + imc + "<br>");
+			document.write("Cuidado, seu estatus é: Magreza.");
+		}
+		else {
+			document.write("Seu IMC é: " + imc + "<br>");
+			document.write("Pelo menos Magreza você não Tem !!");
+		}
+		
+	}
+	//chama a função para a realização do cálculo.
+	calculaIMC();
+	</script>
+</body>
+</html>
