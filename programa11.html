@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>Estrutura de controle</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Entendendo o SWITCH</h1>
+	<script type="text/javascript">
+		/*Inatanciamos um objeto do tipo Data e chamamos um metódo que verifica o dia atual*/
+		var dia = new Date().getDay();
+		var diaSemana;
+		switch(dia) {
+			case 0:
+					diaSemana = "Domingo";
+					break;
+			case 1:
+					diaSemana = "Segunda-Feira";
+					break;
+			case 2:
+					diaSemana = "Terça-Feira";
+					break;
+			case 3:
+					diaSemana = "QuartaFeira";
+					break;
+			case 4:
+					diaSemana = "Quinta-Feira";
+					break;
+			case 5:
+					diaSemana = "Sexta-Feira";
+					break;
+			case 6:
+					diaSemana = "Sábado";
+					break;		
+			default:
+					diaSemana = "Não sei mais de nada!;"
+					break;
+		}
+		document.write("Hojé é: " + diaSemana);
+	</script>
+</body>
+</html>
